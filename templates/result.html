@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>計算結果</title>
+</head>
+<body>
+    <h2>計算結果</h2>
+    <p>金額: {{ session['amount'] }} 円</p>
+    <p>利用方法: {{ session['option'] }}</p>
+    <p>税込合計金額: {{ session['total'] }} 円</p>
+    <a href="{{ url_for('index') }}">戻る</a>
+</body>
+</html>
